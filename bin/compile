@@ -50,7 +50,7 @@ if [[ -d "$env_dir" ]]; then
 fi
 
 export BOOT_LOCAL_REPO="$cache/.m2/repository"
-export BOOT_JVM_OPTIONS=${BOOT_JVM_OPTIONS:"-Xmx768m -Xss512k"}
+export BOOT_JVM_OPTIONS=${BOOT_JVM_OPTIONS:-"-Xmx768m -Xss512k"}
 export BOOT_BIN_VERSION=${BOOT_BIN_VERSION:-latest}
 export BOOT_CLOJURE_VERSION=${BOOT_CLOJURE_VERSION:-1.8.0}
 
