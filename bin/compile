@@ -51,6 +51,7 @@ fi
 
 export BOOT_LOCAL_REPO="$cache/.m2/repository"
 export BOOT_JVM_OPTIONS=${BOOT_JVM_OPTIONS:-"-Xmx2048m -Xss512k"}
+export JVM_OPTS="-Xmx2048m -Xss512k"
 export BOOT_BIN_VERSION=${BOOT_BIN_VERSION:-latest}
 export BOOT_CLOJURE_VERSION=${BOOT_CLOJURE_VERSION:-1.8.0}
 
